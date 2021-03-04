@@ -53,11 +53,19 @@ for( propiedad in array){
     console.log(propiedad + " " + array[propiedad])
 }
 
-//While
-var jindice = 0;
-while ( jindice < ciudades.length) {
-    console.log("Estamos visitando " + ciudades[jindice]);
-    jindice++;
+//While (evalua la expresion de la condicion y ejecuta la primera iteración)
+var j = 0;
+while ( j < ciudades.length) {
+    console.log("Estamos visitando " + ciudades[j]);
+    j++;
 }
 
-//do...while
+//do...while (bloque de código o iteracion se ejecuta antes de ver la condición)
+var totalSuma = 0;
+var h = 0;
+do{
+    totalSuma += reservas[h].price;
+    h++;
+}while(h < reservas.length);
+console.log(totalSuma)
+
